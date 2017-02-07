@@ -20,12 +20,13 @@ export class OverviewComponent {
     constructor(private membraneDaemonService: MembraneDaemonService) {
         setInterval(() => {
             this.date = new Date();
+            this.membraneDaemonService.getInfo();
         }, 1000);
 
-        this.membraneDaemonService.getInfo().subscribe(
+        this.membraneDaemonService.getInfoStream().subscribe(
             data => this.info = data,
             error => console.error(error),
-            () => console.log("Finished request!")
+            () => console.log("Retrieved Info Successfully")
         );
     }
 }
