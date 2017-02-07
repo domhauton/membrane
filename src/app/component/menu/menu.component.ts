@@ -11,7 +11,9 @@ import { Component } from '@angular/core';
 })
 
 export class MenuComponent {
+    menuOption: String = "Overview";
+
     clickMenu(e) {
-        console.log(e);
+        this.menuOption = e;
     }
 }

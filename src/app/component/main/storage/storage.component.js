@@ -1,6 +1,3 @@
-/**
- * Created by dominic on 06/02/17.
- */
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -11,28 +8,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+/**
+ * Created by dominic on 06/02/17.
+ */
 var core_1 = require("@angular/core");
-var membraned_service_1 = require("../../service/membaned/membraned.service");
-var OverviewComponent = (function () {
-    function OverviewComponent(membraneDaemonService) {
-        var _this = this;
+var membraned_service_1 = require("../../../service/membaned/membraned.service");
+var StorageComponent = (function () {
+    function StorageComponent(membraneDaemonService) {
         this.membraneDaemonService = membraneDaemonService;
-        this.title = 'Overview Screen';
-        this.membraneDaemonService.getInfoStream().subscribe(function (data) { return _this.info = data; }, function (error) { return console.error(error); }, function () { return console.log("Retrieved Info Successfully"); });
-        this.membraneDaemonService.getUptimeStream().subscribe(function (data) {
-            _this.uptime = data;
-            console.log(data);
-        });
+        this.title = 'Storage Screen';
     }
-    return OverviewComponent;
+    return StorageComponent;
 }());
-OverviewComponent = __decorate([
+StorageComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        selector: 'main-component',
-        templateUrl: 'overview.component.html',
+        selector: 'storage-component',
+        templateUrl: 'storage.component.html',
     }),
     __metadata("design:paramtypes", [membraned_service_1.MembraneDaemonService])
-], OverviewComponent);
-exports.OverviewComponent = OverviewComponent;
-//# sourceMappingURL=overview.component.js.map
+], StorageComponent);
+exports.StorageComponent = StorageComponent;
+//# sourceMappingURL=storage.component.js.map

@@ -12,11 +12,16 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var menu_component_1 = require("./component/menu/menu.component");
 var user_service_1 = require("./service/user.service");
-var overview_component_1 = require("./component/overview/overview.component");
+var overview_component_1 = require("./component/main/overview/overview.component");
 var membraned_service_1 = require("./service/membaned/membraned.service");
 var http_1 = require("@angular/http");
 var router_1 = require("@angular/router");
 var decorator_component_1 = require("./component/decorator/decorator.component");
+var settings_component_1 = require("./component/settings/settings.component");
+var help_component_1 = require("./component/help/help.component");
+var network_component_1 = require("./component/main/network/network.component");
+var storage_component_1 = require("./component/main/storage/storage.component");
+var watcher_component_1 = require("./component/main/watcher/watcher.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -33,6 +38,11 @@ AppModule = __decorate([
             decorator_component_1.DecoratorComponent,
             menu_component_1.MenuComponent,
             overview_component_1.OverviewComponent,
+            settings_component_1.SettingsComponent,
+            help_component_1.HelpComponent,
+            network_component_1.NetworkComponent,
+            storage_component_1.StorageComponent,
+            watcher_component_1.WatcherComponent,
         ],
         providers: [
             user_service_1.UserService,

@@ -4,7 +4,8 @@
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-    padding-top: 50px;
+    padding-top: 55px;
+    background-color: #fafafa;
 }
 
 /*
@@ -29,8 +30,9 @@ h1 {
     z-index: 1000;
     padding: 20px;
     overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    overflow-y: auto;
     border-right: 1px solid #eee;
+    background-color: #252525;
 }
 
 /* Sidebar navigation */
@@ -44,27 +46,33 @@ h1 {
 }
 
 .sidebar .nav-item {
+    transition: all 0.4s ease-in-out;
     width: 100%;
+    background-color: #252525;
+    color: #545454;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
 }
 
-.sidebar .nav-item + .nav-item {
-    margin-left: 0;
+.sidebar .nav-item:hover {
+    transition: all 0.4s ease-in-out;
+    background-color: #191919;
+    color: #6e6e6e;
+}
+
+.sidebar .nav-item .active {
+    transition: all 0.4s ease-in-out;
+    background-color: #0277BD;
+    color: #dcdcdc;
+}
+
+.sidebar .nav-item .active:hover {
+    transition: all 0.4s ease-in-out;
+    color: #ffffff;
 }
 
 .sidebar .nav-link {
+    padding-left: 15px;
     border-radius: 0;
-}
-
-/*
- * Dashboard
- */
-
-/* Placeholders */
-.placeholders {
-    padding-bottom: 3rem;
-}
-
-.placeholder img {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
 }

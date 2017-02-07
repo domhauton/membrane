@@ -11,9 +11,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var MenuComponent = (function () {
     function MenuComponent() {
+        this.menuOption = "Overview";
     }
     MenuComponent.prototype.clickMenu = function (e) {
-        console.log(e);
+        this.menuOption = e;
     };
     return MenuComponent;
 }());

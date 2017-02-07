@@ -3,12 +3,12 @@
  */
 
 import {Component} from '@angular/core';
-import {MembraneDaemonService} from "../../service/membaned/membraned.service";
-import {MembraneInfo} from "../../service/membaned/membranedInfo";
+import {MembraneDaemonService} from "../../../service/membaned/membraned.service";
+import {MembraneInfo} from "../../../service/membaned/membranedInfo";
 
 @Component({
     moduleId: module.id,
-    selector: 'main-component',
+    selector: 'overview-component',
     templateUrl: 'overview.component.html',
 })
 

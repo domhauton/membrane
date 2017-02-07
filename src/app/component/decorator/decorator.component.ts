@@ -11,7 +11,9 @@ import { Component } from '@angular/core';
 })
 
 export class DecoratorComponent {
+    option: String = 'Home';
+
     clickNavBar(e) {
-        console.log(e);
+        this.option = e;
     }
 }
