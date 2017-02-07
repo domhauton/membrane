@@ -2,11 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b08fcb3-ad9d-40c8-894f-a022f72b21c9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/app.module.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/app.module.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/app.routes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/app.routes.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/component/decorator/decorator.component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/component/decorator/decorator.component.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/component/menu/menu.component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/component/menu/menu.component.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/component/overview/overview.component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/component/overview/overview.component.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/directive/highlight.directive.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/directive/highlight.directive.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/directive/highlight.directive.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/service/membaned/membraned.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/service/membaned/membraned.service.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/service/membaned/membranedInfo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/service/membaned/membranedInfo.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/service/user.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/service/user.service.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/store/appState.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/store/appState.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/membrane.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/polyfills.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/polyfills.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/polyfills.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vendor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vendor.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vendor.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/overview/overview.component.html" afterPath="$PROJECT_DIR$/src/app/component/overview/overview.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/component/overview/overview.component.ts" afterPath="$PROJECT_DIR$/src/app/component/overview/overview.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/service/membaned/membraned.service.ts" afterPath="$PROJECT_DIR$/src/app/service/membaned/membraned.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/service/membaned/membranedInfo.ts" afterPath="$PROJECT_DIR$/src/app/service/membaned/membranedInfo.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/src/app/service/membaned/membraned.service.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="468">
-              <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -238,7 +266,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="-16" />
-    <option name="width" value="3840" />
+    <option name="width" value="1920" />
     <option name="height" value="2146" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -653,7 +681,7 @@
       <workItem from="1486418340899" duration="2000" />
       <workItem from="1486418347207" duration="1000" />
       <workItem from="1486420774438" duration="5467000" />
-      <workItem from="1486474341037" duration="5366000" />
+      <workItem from="1486474341037" duration="5428000" />
     </task>
     <task id="LOCAL-00001" summary="Base app created">
       <created>1486315892302</created>
@@ -683,11 +711,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486476272957</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Working state polling">
+      <created>1486488308728</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1486488308728</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43939000" />
+    <option name="totallyTimeSpent" value="44001000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -699,11 +734,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-16" width="3840" height="2146" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="-16" width="1920" height="2146" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.49907675" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1657444" sideWeight="0.4926867" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33546665" sideWeight="0.4926867" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5009232" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -758,7 +793,8 @@
     <MESSAGE value="Working angular electron app." />
     <MESSAGE value="First application call working&#10;" />
     <MESSAGE value="Layout locked in" />
-    <option name="LAST_COMMIT_MESSAGE" value="Layout locked in" />
+    <MESSAGE value="Working state polling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working state polling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1000,7 +1036,7 @@
     <entry file="file://$PROJECT_DIR$/src/app/service/membaned/membraned.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
