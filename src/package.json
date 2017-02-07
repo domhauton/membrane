@@ -1,10 +1,10 @@
 {
-  "name": "membrane-gui",
+  "name": "membrane",
   "version": "1.0.0",
   "description": "Membrane Distributed Backup GUI",
   "main": "main.js",
   "scripts": {
-    "package": "electron-packager app membrane-gui",
+    "package": "electron-packager . -all",
     "electron": "electron app"
   },
   "repository": "https://github.com/domhauton/membrane-gui",
@@ -37,7 +37,8 @@
     "reflect-metadata": "0.1.2",
     "rxjs": "5.1.0",
     "tether": "^1.4.0",
-    "zone.js": "0.7.6"
+    "zone.js": "0.7.6",
+    "rx": "4.1.0"
   },
   "devDependencies": {
     "@types/hammerjs": "^2.0.33",

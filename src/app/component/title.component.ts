@@ -7,13 +7,13 @@ import {UserService} from '../service/user.service';
 
 @Component({
     moduleId: module.id,
-    selector: 'main-component',
+    selector: 'storage',
     templateUrl: 'title.component.html',
 })
 
 export class TitleComponent {
     @Input() subtitle = '';
-    title = 'Overview';
+    title = 'Demo Title';
     user = '';
 
     constructor(userService: UserService) {

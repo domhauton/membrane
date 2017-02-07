@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 @Component({
     // The selector is what angular internally uses
     selector: 'main-window', // <app></app>
-    templateUrl: './component/menu.component.html'
+    templateUrl: './app/component/menu.component.html'
 })
 
 export class MenuComponent {
