@@ -5,8 +5,6 @@
  * Angular Modules
  */
 import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
-import {HttpModule} from "@angular/http";
-import {RouterModule} from "@angular/router";
 import "rxjs/add/operator/map";
 import "rxjs/add/operator/toPromise";
 import {enableProdMode} from "@angular/core";

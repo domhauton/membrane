@@ -16,17 +16,29 @@ var MembraneDaemonService = (function () {
     function MembraneDaemonService(http) {
         var _this = this;
         this.http = http;
-        this.memInfoStream = rxjs_1.Observable.interval(2000)
+        this.memInfoSource = rxjs_1.Observable.interval(2000)
             .switchMap(function () { return _this.getInfo(); });
+        this.memInfoSubject = new rxjs_1.BehaviorSubject(new membranedInfo_1.MembraneInfo(null));
+        this.memInfoSource.subscribe(this.memInfoSubject);
+        var uptimeSource = rxjs_1.Observable.interval(500)
+            .map(function () { return _this.getUptime(); });
+        this.uptimeSubject = new rxjs_1.BehaviorSubject(this.getUptime());
+        uptimeSource.subscribe(this.uptimeSubject);
     }
+    MembraneDaemonService.prototype.getInfoStream = function () {
+        return this.memInfoSubject;
+    };
+    MembraneDaemonService.prototype.getUptimeStream = function () {
+        return this.uptimeSubject;
+    };
     MembraneDaemonService.prototype.getInfo = function () {
-        return this.http.get('http://127.0.01:13200/')
+        return this.http.get('http://127.0.0.1:13200/')
             .map(function (res) { return res.json(); })
             .map(function (res) { return new membranedInfo_1.MembraneInfo(res); })
             .catch(function () { return rxjs_1.Observable.of(new membranedInfo_1.MembraneInfo(null)); });
     };
-    MembraneDaemonService.prototype.getInfoStream = function () {
-        return this.memInfoStream;
+    MembraneDaemonService.prototype.getUptime = function () {
+        return this.memInfoSubject.getValue().getUptime();
     };
     return MembraneDaemonService;
 }());

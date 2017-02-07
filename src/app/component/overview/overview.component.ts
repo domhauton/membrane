@@ -14,19 +14,22 @@ import {MembraneInfo} from "../../service/membaned/membranedInfo";
 
 export class OverviewComponent {
     private title = 'Overview Screen';
-    private date = new Date();
     private info: MembraneInfo;
+    private uptime: String;
 
     constructor(private membraneDaemonService: MembraneDaemonService) {
-        setInterval(() => {
-            this.date = new Date();
-            this.membraneDaemonService.getInfo();
-        }, 1000);
 
         this.membraneDaemonService.getInfoStream().subscribe(
             data => this.info = data,
             error => console.error(error),
             () => console.log("Retrieved Info Successfully")
+        );
+
+        this.membraneDaemonService.getUptimeStream().subscribe(
+            data => {
+                this.uptime = data;
+                console.log(data);
+            }
         );
     }
 }

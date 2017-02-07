@@ -1,12 +1,11 @@
-<h1 highlight>{{title}} {{subtitle}}</h1>
+<h1 highlight>{{title}}</h1>
 <div>
-    <h2>{{date | date: 'hh:mm:ss'}}</h2>
     <div *ngIf="info">
         <p>Hostname: {{info.hostname}}</p>
         <p>Port: {{info.port}}</p>
         <p>Version: {{info.version}}</p>
         <p>Status: {{info.status}}</p>
         <p>Start Time: {{info.startTime}}</p>
+        <p>Uptime: {{uptime}}</p>
     </div>
-
 </div>

@@ -1,3 +1,6 @@
+import moment = require("moment");
+import Moment = moment.Moment;
+import Duration = moment.Duration;
 /**
  * Created by dominic on 07/02/17.
  */
@@ -7,7 +10,7 @@ export class MembraneInfo {
     port: number;
     version: string;
     status: string;
-    startTime: Date;
+    startTime: Moment;
     online: boolean;
 
     constructor(info: any) {
@@ -16,15 +19,24 @@ export class MembraneInfo {
             this.port = info.port;
             this.version = info.version;
             this.status = info.status;
-            this.startTime = new Date(Date.parse(info.startTime));
+            this.startTime = moment(info.startTime);
             this.online = true;
         } else {
             this.hostname = "n/a";
             this.port = 0;
             this.version = "n/a";
             this.status = "OFFLINE";
-            this.startTime = new Date();
+            this.startTime = moment();
             this.online = false;
+        }
+    }
+
+    getUptime(): String {
+        if (this.online) {
+            let milliseconds = moment.duration(moment().diff(this.startTime)).asMilliseconds();
+            return moment.utc(milliseconds).format("HH:mm:ss");
+        } else {
+            return "n/a";
         }
     }
 }

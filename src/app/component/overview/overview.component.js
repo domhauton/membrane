@@ -18,12 +18,11 @@ var OverviewComponent = (function () {
         var _this = this;
         this.membraneDaemonService = membraneDaemonService;
         this.title = 'Overview Screen';
-        this.date = new Date();
-        setInterval(function () {
-            _this.date = new Date();
-            _this.membraneDaemonService.getInfo();
-        }, 1000);
         this.membraneDaemonService.getInfoStream().subscribe(function (data) { return _this.info = data; }, function (error) { return console.error(error); }, function () { return console.log("Retrieved Info Successfully"); });
+        this.membraneDaemonService.getUptimeStream().subscribe(function (data) {
+            _this.uptime = data;
+            console.log(data);
+        });
     }
     return OverviewComponent;
 }());
