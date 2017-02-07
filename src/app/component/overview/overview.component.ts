@@ -3,7 +3,8 @@
  */
 
 import {Component} from '@angular/core';
-import {MembraneDaemonService} from "../service/membraned.service";
+import {MembraneDaemonService} from "../../service/membaned/membraned.service";
+import {MembraneInfo} from "../../service/membaned/membranedInfo";
 
 @Component({
     moduleId: module.id,
@@ -14,7 +15,7 @@ import {MembraneDaemonService} from "../service/membraned.service";
 export class OverviewComponent {
     private title = 'Overview Screen';
     private date = new Date();
-    private info: {};
+    private info: MembraneInfo;
 
     constructor(private membraneDaemonService: MembraneDaemonService) {
         setInterval(() => {
