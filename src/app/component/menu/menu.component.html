@@ -1,18 +1,40 @@
 <div class="row">
     <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
         <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-                <a class="nav-link" [class.active]="menuOption === 'Overview'" (click)="clickMenu('Overview')">Overview
-                    <span class="sr-only">(current)</span></a>
+            <li class="logo">
+                <img src="assets/noun_739905_cc_membrane_icon.svg"/>
             </li>
             <li class="nav-item">
-                <a class="nav-link" [class.active]="menuOption === 'Storage'" (click)="clickMenu('Storage')">Storage</a>
+                <a class="nav-link" [class.active]="menuOption === 'Overview'" (click)="clickMenu('Overview')">
+                    <div class="nav-icon">
+                        <img src="assets/noun_740700_cc_home_icon.svg"/>
+                    </div>
+                    <p>Overview</p>
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" [class.active]="menuOption === 'Watcher'" (click)="clickMenu('Watcher')">Watcher</a>
+                <a class="nav-link" [class.active]="menuOption === 'Storage'" (click)="clickMenu('Storage')">
+                    <div class="nav-icon">
+                        <img src="assets/noun_793919_cc_storage_icon.svg"/>
+                    </div>
+                    Storage
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" [class.active]="menuOption === 'Network'" (click)="clickMenu('Network')">Network</a>
+                <a class="nav-link" [class.active]="menuOption === 'Watcher'" (click)="clickMenu('Watcher')">
+                    <div class="nav-icon">
+                        <img src="assets/noun_198346_cc_watcher_icon.svg"/>
+                    </div>
+                    Watcher
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [class.active]="menuOption === 'Network'" (click)="clickMenu('Network')">
+                    <div class="nav-icon">
+                        <img src="assets/noun_455_cc_network_icon.svg"/>
+                    </div>
+                    Network
+                </a>
             </li>
         </ul>
     </nav>

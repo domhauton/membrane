@@ -16,7 +16,7 @@ var MembraneDaemonService = (function () {
     function MembraneDaemonService(http) {
         var _this = this;
         this.http = http;
-        this.memInfoSource = rxjs_1.Observable.interval(2000)
+        this.memInfoSource = rxjs_1.Observable.interval(5000)
             .switchMap(function () { return _this.getInfo(); });
         this.memInfoSubject = new rxjs_1.BehaviorSubject(new membranedInfo_1.MembraneInfo(null));
         this.memInfoSource.subscribe(this.memInfoSubject);

@@ -11,7 +11,7 @@ export class MembraneDaemonService {
     uptimeSubject: BehaviorSubject<String>;
 
     constructor(private http: Http) {
-        this.memInfoSource = Observable.interval(2000)
+        this.memInfoSource = Observable.interval(5000)
             .switchMap(() => this.getInfo());
         this.memInfoSubject = new BehaviorSubject(new MembraneInfo(null));
         this.memInfoSource.subscribe(this.memInfoSubject);
