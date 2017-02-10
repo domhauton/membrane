@@ -1,4 +1,4 @@
-<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+<nav class="navbar navbar-toggleable navbar-inverse fixed-top bg-inverse">
     <button class="navbar-toggler navbar-toggler-right hidden-lg-up" type="button" data-toggle="collapse"
             data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -21,12 +21,21 @@
     </div>
 </nav>
 
-<div *ngIf="option === 'Home'">
-    <main-app>Loading main-screen...</main-app>
+<div class="container-fluid">
+    <div *ngIf="option === 'Home'">
+        <main-app>Loading main-screen...</main-app>
+    </div>
+    <div *ngIf="option === 'Settings'">
+        <settings-module>Loading settings screen...</settings-module>
+    </div>
+    <div *ngIf="option === 'Help'">
+        <help-module>Loading help screen...</help-module>
+    </div>
 </div>
-<div *ngIf="option === 'Settings'">
-    <settings-module>Loading settings screen...</settings-module>
-</div>
-<div *ngIf="option === 'Help'">
-    <help-module>Loading help screen...</help-module>
-</div>
+
+
+<footer class="footer">
+    <div class="container vertical-align">
+        <p class="text-muted text-right">Membrane GUI {{version}}</p>
+    </div>
+</footer>

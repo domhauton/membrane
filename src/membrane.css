@@ -2,15 +2,16 @@
  * Base structure
  */
 
-/* Move down content because we have a fixed navbar that is 50px tall */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     padding-top: 55px;
     background-color: #fafafa;
+    margin-bottom: 60px;
 }
-
-/*
- * Typography
- */
 
 h1 {
     margin-bottom: 20px;
@@ -18,14 +19,14 @@ h1 {
     border-bottom: 1px solid #eee;
 }
 
-/*
- * Sidebar
- */
+.container-fluid {
+    margin-bottom: 60px;
+}
 
 .sidebar {
     position: fixed;
-    top: 51px;
-    bottom: 0;
+    top: 55px;
+    bottom: 55px;
     left: 0;
     z-index: 1000;
     padding: 20px;
@@ -100,3 +101,27 @@ h1 {
     width: 80%;
     text-align: center;
 }
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 55px;
+    background-color: #292b2c;
+}
+
+.footer .version-info span {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center;
+}
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+

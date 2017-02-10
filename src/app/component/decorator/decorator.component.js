@@ -12,6 +12,7 @@ var core_1 = require("@angular/core");
 var DecoratorComponent = (function () {
     function DecoratorComponent() {
         this.option = 'Home';
+        this.version = "1.0.0-alpha.1";
     }
     DecoratorComponent.prototype.clickNavBar = function (e) {
         this.option = e;

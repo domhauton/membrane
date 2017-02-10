@@ -12,6 +12,7 @@ import { Component } from '@angular/core';
 
 export class DecoratorComponent {
     option: String = 'Home';
+    version: String = "1.0.0-alpha.1";
 
     clickNavBar(e) {
         this.option = e;
