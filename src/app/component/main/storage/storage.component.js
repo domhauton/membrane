@@ -15,8 +15,23 @@ var core_1 = require("@angular/core");
 var membraned_service_1 = require("../../../service/membaned/membraned.service");
 var StorageComponent = (function () {
     function StorageComponent(membraneDaemonService) {
+        var _this = this;
         this.membraneDaemonService = membraneDaemonService;
-        this.title = 'Storage Screen';
+        this.title = 'Storage Status';
+        this.membraneDaemonService.getInfoStream().subscribe(function (data) {
+            return _this.info = data;
+        }, function (error) {
+            return console.error(error);
+        }, function () {
+            return console.log("Retrieved Info Successfully");
+        });
+        this.membraneDaemonService.getStorageStatusStream().subscribe(function (data) {
+            return _this.storageStatus = data;
+        }, function (error) {
+            return console.error(error);
+        }, function () {
+            return console.log("Retrieved Storage Status Successfully");
+        });
     }
     return StorageComponent;
 }());

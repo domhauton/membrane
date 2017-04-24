@@ -1,1 +1,11 @@
 <h1 highlight>{{title}}</h1>
+
+<div *ngIf="info.port !== 0">
+    <div *ngIf="watcherStatus">
+        <p>Tracked Folders: {{watcherStatus.trackedFolders.length}}</p>
+        <p>Tracked Files: {{watcherStatus.trackedFiles.length}}</p>
+    </div>
+</div>
+<div *ngIf="info.port === 0">
+    <p>Waiting for connection to Membrane Daemon</p>
+</div>

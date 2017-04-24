@@ -29,17 +29,11 @@ h1 {
     bottom: 55px;
     left: 0;
     z-index: 1000;
-    padding: 20px;
     overflow-x: hidden;
     overflow-y: auto;
     border-right: 1px solid #eee;
     background-color: #252525;
-}
-
-/* Sidebar navigation */
-.sidebar {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 20px 0;
 }
 
 .sidebar .nav {
@@ -103,11 +97,12 @@ h1 {
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 55px;
+    line-height: 25px; /* Vertically center the text there */
     background-color: #292b2c;
 }
 

@@ -2,9 +2,7 @@
  * Created by dominic on 06/02/17.
  */
 
-import {Component} from '@angular/core';
-import {MembraneDaemonService} from "../../service/membaned/membraned.service";
-import {MembraneInfo} from "../../service/membaned/membranedInfo";
+import {Component} from "@angular/core";
 
 @Component({
     moduleId: module.id,
@@ -13,7 +11,7 @@ import {MembraneInfo} from "../../service/membaned/membranedInfo";
 })
 
 export class HelpComponent {
-    private title = 'Help Screen';
+    private title = 'Membrane GUI Help';
 
     constructor() {
     }

@@ -10,7 +10,7 @@ var MembraneInfo = (function () {
             this.port = info.port;
             this.version = info.version;
             this.status = info.status;
-            this.startTime = moment(info.startTime);
+            this.startTime = moment.utc(info.startTime);
             this.online = true;
         }
         else {
@@ -24,7 +24,7 @@ var MembraneInfo = (function () {
     }
     MembraneInfo.prototype.getUptime = function () {
         if (this.online) {
-            var milliseconds = moment.duration(moment().diff(this.startTime)).asMilliseconds();
+            var milliseconds = moment.duration(moment().utc().diff(this.startTime)).asMilliseconds();
             return moment.utc(milliseconds).format("HH:mm:ss");
         }
         else {

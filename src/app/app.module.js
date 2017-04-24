@@ -17,7 +17,6 @@ var membraned_service_1 = require("./service/membaned/membraned.service");
 var http_1 = require("@angular/http");
 var router_1 = require("@angular/router");
 var decorator_component_1 = require("./component/decorator/decorator.component");
-var settings_component_1 = require("./component/settings/settings.component");
 var help_component_1 = require("./component/help/help.component");
 var network_component_1 = require("./component/main/network/network.component");
 var storage_component_1 = require("./component/main/storage/storage.component");
@@ -38,7 +37,6 @@ AppModule = __decorate([
             decorator_component_1.DecoratorComponent,
             menu_component_1.MenuComponent,
             overview_component_1.OverviewComponent,
-            settings_component_1.SettingsComponent,
             help_component_1.HelpComponent,
             network_component_1.NetworkComponent,
             storage_component_1.StorageComponent,

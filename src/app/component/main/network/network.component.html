@@ -1,1 +1,35 @@
 <h1 highlight>{{title}}</h1>
+
+
+<div *ngIf="info.port !== 0">
+    <div *ngIf="contractInfo">
+        <p><b>Contract Info:</b></p>
+        <div *ngIf="contractInfo.contractManagerActive">
+            <p>Contracted Peers: {{contractInfo.contractedPeers.length}} (max. {{contractInfo.contractTarget}})</p>
+            <p>Undeployed Shards: {{contractInfo.undeployedShards.length}}</p>
+            <p>Partially Distributed: {{contractInfo.partiallyDistributedShards.length}}</p>
+            <p>Fully Distributed Shards: {{contractInfo.fullyDistributedShards.length}}</p>
+        </div>
+        <div *ngIf="!contractInfo.contractManagerActive">
+            <p>Peer Contracts Disabled or Contract Info Unavailable.</p>
+            <p>Please enable in the config and restart.</p>
+        </div>
+    </div>
+
+    <div *ngIf="networkStatus">
+        <p><b>Network Status:</b></p>
+        <div *ngIf="networkStatus.enabled">
+            <p>Network UID: {{networkStatus.networkUID}}</p>
+            <p>Connected Peers: {{networkStatus.connectedPeers}} (max. {{networkStatus.maxConnectionCount}})</p>
+            <p>Local Peer Port: {{networkStatus.peerListeningPort}}</p>
+            <p>UPnP Address: {{networkStatus.upnpAddress}}</p>
+        </div>
+        <div *ngIf="!networkStatus.enabled">
+            <p>Network Disabled or Network Status Unavailable.</p>
+            <p>Please enable in the config and restart.</p>
+        </div>
+    </div>
+</div>
+<div *ngIf="info.port === 0">
+    <p>Waiting for connection to Membrane Daemon</p>
+</div>

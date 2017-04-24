@@ -2,7 +2,7 @@
  * Created by dominic on 06/02/17.
  */
 
-import {Component} from '@angular/core';
+import {Component} from "@angular/core";
 import {MembraneDaemonService} from "../../../service/membaned/membraned.service";
 import {MembraneInfo} from "../../../service/membaned/membranedInfo";
 
@@ -13,7 +13,7 @@ import {MembraneInfo} from "../../../service/membaned/membranedInfo";
 })
 
 export class OverviewComponent {
-    private title = 'Overview Screen';
+    private title = 'Membrane Info';
     private info: MembraneInfo;
     private uptime: String;
 

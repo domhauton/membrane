@@ -11,9 +11,6 @@
             <li class="nav-item" [class.active]="option === 'Home'" (click)="clickNavBar('Home')">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item" [class.active]="option === 'Settings'" (click)="clickNavBar('Settings')">
-                <a class="nav-link" href="#">Settings</a>
-            </li>
             <li class="nav-item" [class.active]="option === 'Help'" (click)="clickNavBar('Help')">
                 <a class="nav-link" href="#">Help</a>
             </li>
@@ -24,9 +21,6 @@
 <div class="container-fluid">
     <div *ngIf="option === 'Home'">
         <main-app>Loading main-screen...</main-app>
-    </div>
-    <div *ngIf="option === 'Settings'">
-        <settings-module>Loading settings screen...</settings-module>
     </div>
     <div *ngIf="option === 'Help'">
         <help-module>Loading help screen...</help-module>

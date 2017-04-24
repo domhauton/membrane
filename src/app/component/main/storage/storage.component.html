@@ -1,1 +1,14 @@
 <h1 highlight>{{title}}</h1>
+
+<div *ngIf="info.port !== 0">
+    <div *ngIf="storageStatus">
+        <p>Tracking {{storageStatus.currentFiles.length}} file/s of {{storageStatus.referencedFiles.length}} stored.</p>
+        <p>Local Shard Storage: {{storageStatus.localShardStorageSize}}MB of
+            {{storageStatus.targetLocalShardStorageSize}}MB (max. {{storageStatus.maxLocalShardStorageSize}}MB)</p>
+        <p>Peer Block Storage: {{storageStatus.peerBlockStorageSize}}MB of
+            {{storageStatus.targetPeerBlockStorageSize}}MB (max. {{storageStatus.maxPeerBlockStorageSize}}MB)</p>
+    </div>
+</div>
+<div *ngIf="info.port === 0">
+    <p>Waiting for connection to Membrane Daemon</p>
+</div>

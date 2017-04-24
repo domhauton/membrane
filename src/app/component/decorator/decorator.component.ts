@@ -2,7 +2,7 @@
  * Created by dominic on 05/02/17.
  */
 
-import { Component } from '@angular/core';
+import {Component} from "@angular/core";
 
 @Component({
     moduleId: module.id,
@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
 
 export class DecoratorComponent {
     option: String = 'Home';
-    version: String = "1.0.0-alpha.1";
+    version: String = "1.0.0-alpha.5";
 
     clickNavBar(e) {
         this.option = e;

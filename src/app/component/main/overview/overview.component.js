@@ -17,7 +17,7 @@ var OverviewComponent = (function () {
     function OverviewComponent(membraneDaemonService) {
         var _this = this;
         this.membraneDaemonService = membraneDaemonService;
-        this.title = 'Overview Screen';
+        this.title = 'Membrane Info';
         this.membraneDaemonService.getInfoStream().subscribe(function (data) { return _this.info = data; }, function (error) { return console.error(error); }, function () { return console.log("Retrieved Info Successfully"); });
         this.membraneDaemonService.getUptimeStream().subscribe(function (data) {
             _this.uptime = data;

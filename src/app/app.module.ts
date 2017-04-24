@@ -10,7 +10,6 @@ import {MembraneDaemonService} from "./service/membaned/membraned.service";
 import {HttpModule} from "@angular/http";
 import {RouterModule} from "@angular/router";
 import {DecoratorComponent} from "./component/decorator/decorator.component";
-import {SettingsComponent} from "./component/settings/settings.component";
 import {HelpComponent} from "./component/help/help.component";
 import {NetworkComponent} from "./component/main/network/network.component";
 import {StorageComponent} from "./component/main/storage/storage.component";
@@ -26,7 +25,6 @@ import {WatcherComponent} from "./component/main/watcher/watcher.component";
         DecoratorComponent,
         MenuComponent,
         OverviewComponent,
-        SettingsComponent,
         HelpComponent,
         NetworkComponent,
         StorageComponent,

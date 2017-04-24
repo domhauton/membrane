@@ -19,7 +19,7 @@ export class MembraneInfo {
             this.port = info.port;
             this.version = info.version;
             this.status = info.status;
-            this.startTime = moment(info.startTime);
+            this.startTime = moment.utc(info.startTime);
             this.online = true;
         } else {
             this.hostname = "n/a";
@@ -33,7 +33,7 @@ export class MembraneInfo {
 
     getUptime(): String {
         if (this.online) {
-            let milliseconds = moment.duration(moment().diff(this.startTime)).asMilliseconds();
+            let milliseconds = moment.duration(moment().utc().diff(this.startTime)).asMilliseconds();
             return moment.utc(milliseconds).format("HH:mm:ss");
         } else {
             return "n/a";
