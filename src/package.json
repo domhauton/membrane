@@ -1,5 +1,5 @@
 {
-  "name": "membrane",
+  "name": "membrane-gui",
   "version": "1.0.0",
   "description": "Membrane Distributed Backup GUI",
   "main": "main.js",
